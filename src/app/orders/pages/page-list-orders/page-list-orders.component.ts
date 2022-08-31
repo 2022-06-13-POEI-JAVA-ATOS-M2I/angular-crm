@@ -7,9 +7,17 @@ import { OrdersService } from '../../services/orders.service';
   styleUrls: ['./page-list-orders.component.scss'],
 })
 export class PageListOrdersComponent implements OnInit {
+  public myTitle: string;
+
   constructor(private ordersService: OrdersService) {
+    this.myTitle = 'List of orders';
+
     this.ordersService.collection$.subscribe((data) => console.log(data));
   }
 
   ngOnInit(): void {}
+
+  public changeTitle(): void {
+    this.myTitle = 'le titre a changé';
+  }
 }
