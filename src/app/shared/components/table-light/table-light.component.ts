@@ -11,14 +11,14 @@ export class TableLightComponent implements OnInit {
 
   constructor() {
     // console.log(this.collection);
-    console.log(this.headers);
+    // console.log(this.headers);
   }
   ngOnChanges(): void {
     // console.log(this.collection);
-    console.log(this.headers);
+    // console.log(this.headers);
   }
   ngOnInit(): void {
     // console.log(this.collection);
-    console.log(this.headers);
+    // console.log(this.headers);
   }
 }
