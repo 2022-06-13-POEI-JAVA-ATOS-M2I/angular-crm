@@ -2,19 +2,20 @@
   <!-- <button (click)="changeTitle();">change title</button> -->
   <!-- <pre>{{ collection | json }}</pre> -->
   <app-table-light [headers]="headers">
-    <tr *ngFor="let item of collection">
+    <tr *ngFor="let order of collection">
       <td>
-        <app-icon-edit (click)="goToEdit(item.id)"></app-icon-edit>
+        <app-icon-edit (click)="goToEdit(order.id)"></app-icon-edit>
+        <app-icon-delete (click)="goToDelete(order.id)"></app-icon-delete>
       </td>
-      <td>{{ item.typePresta | uppercase }}</td>
-      <td>{{ item.client }}</td>
-      <td>{{ item.nbJours }}</td>
-      <td>{{ item.tjmHt | currency }}</td>
-      <td>{{ item.nbJours |total : item.tjmHt | currency }}</td>
-      <td>{{ item.nbJours |total : item.tjmHt : item.tva | currency }}</td>
-      <td [appState]="item.state">
-        <select (change)="changeState(item, $event)">
-          <option *ngFor="let state of states" [value]="state" [selected]="item.state === state">
+      <td>{{ order.typePresta | uppercase }}</td>
+      <td>{{ order.client }}</td>
+      <td>{{ order.nbJours }}</td>
+      <td>{{ order.tjmHt | currency }}</td>
+      <td>{{ order.nbJours |total : order.tjmHt | currency }}</td>
+      <td>{{ order.nbJours |total : order.tjmHt : order.tva | currency }}</td>
+      <td [appState]="order.state">
+        <select (change)="changeState(order, $event)">
+          <option *ngFor="let state of states" [value]="state" [selected]="order.state === state">
             {{ state }}
           </option>
         </select>
