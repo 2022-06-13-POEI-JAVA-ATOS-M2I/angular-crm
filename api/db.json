@@ -19,6 +19,26 @@
       "client": "tutu",
       "comment": "test",
       "id": 2
+    },
+    {
+      "typePresta": "test2",
+      "client": "test2",
+      "nbJours": 3,
+      "tjmHt": 1000,
+      "tva": 20,
+      "state": "CONFIRMED",
+      "comment": "uuu",
+      "id": 3
+    },
+    {
+      "typePresta": "test",
+      "client": "test",
+      "nbJours": 1,
+      "tjmHt": 1200,
+      "tva": 20,
+      "state": "OPTION",
+      "comment": null,
+      "id": 4
     }
   ],
   "clients": [
