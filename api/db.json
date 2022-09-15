@@ -50,29 +50,12 @@
   "users": [
     {
       "email": "toto@mail.com",
-      "password": "$2a$10$m82oEUy2qI7TZ8HNHycERefWQZ6071U3SjVt2/5gpBkQB0/EAcqbW",
+      "password": "$2a$10$GYD3hYNhSGkSlTsgH.xDHecIfjlNbpUoT97aLi.qdw6QBh.Jz0BEG",
       "firstName": "toto",
       "lastName": "tutu",
+      "confirmedPassword": "totopw",
       "grants": "USER",
       "id": 1
-    },
-    {
-      "email": "rufus@mail.com",
-      "password": "$2a$10$Zy8qaR.aEqbKPTHJJS9gxOG9RfaMtCHHHNgZO7rQ5124ggDAT1Qj.",
-      "firstName": "Rufus",
-      "lastName": "Larondelle",
-      "confirmedPassword": "rufuspassword",
-      "grants": "USER",
-      "id": 2
-    },
-    {
-      "email": "tototest@mail.com",
-      "password": "$2a$10$h.jreHmSbL5pjgPIJKjDy.60bzRJ2AavnjKi/vCXyP9G/6H3V.S6y",
-      "firstName": "tototest",
-      "lastName": "tututest",
-      "confirmedPassword": "tototest",
-      "grants": "USER",
-      "id": 3
     }
   ]
 }

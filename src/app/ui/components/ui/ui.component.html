@@ -13,7 +13,7 @@
       </ng-template>
     </span> -->
   <!-- ngIf then else -->
-  <span (click)="toggle()">
+  <span (click)="toggle()" *ngIf="user">
     <ng-container *ngIf="close; then thenBlock else elseBlock"></ng-container>
     <ng-template #thenBlock>
       <ng-content select=".tr-open"></ng-content>
@@ -24,7 +24,7 @@
   </span>
   <ng-content select=".tr-header"></ng-content>
 </header>
-<main [ngClass]="{'close-aside': close}">
+<main [ngClass]="{'close-aside': close || !user}">
   <div class="shadow position-fixed">
   </div>
   <aside>
