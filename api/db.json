@@ -46,5 +46,15 @@
       "comment": "rsger",
       "id": 3
     }
+  ],
+  "users": [
+    {
+      "email": "toto@mail.com",
+      "password": "$2a$10$m82oEUy2qI7TZ8HNHycERefWQZ6071U3SjVt2/5gpBkQB0/EAcqbW",
+      "firstName": "toto",
+      "lastName": "tutu",
+      "grants": "USER",
+      "id": 1
+    }
   ]
 }
